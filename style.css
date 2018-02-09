@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 81px;
+    font-size: 15px;
+}
+
+nav {
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
+}
+.navbar-brand>img {
+    height: 60px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul > li > a {
+    color: #aaa;
+    background-color: #FF0;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+.navbar-nav>li>a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.jumbotron {
+    padding-top: 0;
+}
+.carousel img {
+    width: 100%;
+}
+
+#search-form {
+    padding: 30px;
+    background-color: #d37121;
+    color: #fff;
+}
+
+.price {
+    font-weight: bold;
+    color: green;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 30px 0;
+    margin-top: 80px;
+}
+
+.social-links {
+    text-align: right;
+}
+.social-links a{
+    color: black;
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+.social-links a:hover{
+    color: rgb(90, 66, 21);
+    text-decoration: none;
+}
+
+* {
+    box-sizing: Border-box;
+}
+.contact-info ul {
+    background-color: rgb(0, 128, 117);
+    padding: 35px;
+    color: #fff;
+}
+h1 {
+    color: white;
+    text-align: left;
+    text-shadow: 3px 2px white;
+}
+
+p {
+    font-family: verdana;
+    font-size: 10px;
+    text-align: left;
+}
+
+a {
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+
+.ajax-inventory img{
+    margin-top: 20px;
+}
