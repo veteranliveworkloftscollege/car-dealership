@@ -5,42 +5,42 @@ $(function() {
             "model": "Aventador",
             "year": 2018,
             "price": 199999,
-            "image": "/images/inventory-1.jpg"
+            "image": "images/inventory-1.jpg"
         },
         {
             "make":"Lamborgini",
             "model": "Centenario",
             "year": 2017,
             "price": 198999,
-            "image": "/images/inventory-2.jpg"
+            "image": "images/inventory-2.jpg"
         },
         {
             "make":"Lamborgini",
             "model": "Asterion",
             "year": 2016,
             "price": 196999,
-            "image": "/images/inventory-3.jpg"
+            "image": "images/inventory-3.jpg"
         },
         {
             "make":"Lamborgini",
             "model": "Gallardo",
             "year": 2012,
             "price": 146991,
-            "image": "/images/inventory-4.jpg"
+            "image": "images/inventory-4.jpg"
         },
         {
             "make":"Lamborgini",
             "model": "Huracan",
             "year": 2015,
             "price": 193996,
-            "image": "/images/inventory-5.jpg"
+            "image": "images/inventory-5.jpg"
         },
         {
             "make":"Lamborgini",
             "model": "Huracan",
             "year": 2016,
             "price": 198996,
-            "image": "/images/inventory-6.jpg"
+            "image": "images/inventory-6.jpg"
         }
     ];
 
