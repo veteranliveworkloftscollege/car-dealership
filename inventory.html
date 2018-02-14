@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    
     <title>Inventory &mdash; Audrey's Lamborgini Dealership</title>
-
+    <title>Jquery Automotive Cost Tax Calculator</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700|Raleway:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js   " type="text/javascript"></script>
+    <style>body {font-family: Arial; } label#submit { background-color:rgba(255, 136, 0, 0.596); } </style>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -35,7 +43,8 @@
             </div><!--/.navbar-collapse -->
         </div>
     </nav>
-
+    
+    
     <main>
         <section class="cars-carousel">
             <div class="container">
@@ -120,6 +129,8 @@
                     <div class="col-lg-12">
                         <h2 class="loading" style="text-align: center;">Loading inventory...</h2>
                     </div>
+
+                    
                         <div class="col-md-4">
                             <img class="img-responsive" src="images/inventory-1.jpg" alt="">
                             <h3>Year Make Model</h3>
@@ -160,11 +171,101 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <img class="img-responsive" src="images/inventory-4.jpg" alt="">
+                            <h3>Year Make Model</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, consequuntur?</p>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p class="price">$199,999.00</p>
+                                    
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <button class="btn btn-default">Add tax</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-responsive" src="images/inventory-5.jpg" alt="">
+                            <h3>Year Make Model</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, consequuntur?</p>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p class="price">$199,999.00</p>
+                                    
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <button class="btn btn-default">Add tax</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-responsive" src="images/inventory-6.jpg" alt="">
+                            <h3>Year Make Model</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, consequuntur?</p>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p class="price">$199,999.00</p>
+                                    
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <button class="btn btn-default">Add tax</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
             </div> <!-- /container -->
         </section>
-    </main>
+   
+   <div id="calculator">
+	<!-- Screen and clear key -->
+	<div class="top">
+		<span class="clear">C</span>
+		<div class="screen"></div>
+	</div>
+	
+	<div class="keys">
+		<!-- operators and other keys -->
+		<span>7</span>
+		<span>8</span>
+		<span>9</span>
+		<span class="operator">+</span>
+		<span>4</span>
+		<span>5</span>
+		<span>6</span>
+		<span class="operator">-</span>
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		<span class="operator">÷</span>
+		<span>0</span>
+		<span>.</span>
+		<span class="eval">=</span>
+		<span class="operator">x</span>
+	</div>
+</div>
 
+<!-- PrefixFree -->
+<script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript" type="text/javascript"></script>
+
+ 
+
+    <div class="container">
+        <h1>Jquery Automotive Cost Tax Calculator</h1>
+        <form>
+            <label>Automotive Cost: </label>
+            <input type="text" id="cost" name="cost"/>
+            <label id="submit">Submit</label><br/><br/>
+            <label>Tax: </label>
+            <input type="text" id="text" name="tax" />
+            <label id="submit">Submit</label><br/><br/>
+            <label>Cost After tax: </label>
+            <input type="text" id="cost after tax" name="cost after tax"/>
+            <label id="submit">Submit</label><br/><br/>
+        </form>
+    </div>
+    </main>
+   
     <footer>
         <div class="container">
             <div class="row">
@@ -182,10 +283,13 @@
             </div>
         </div>
     </footer>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!--<script src="assets/js/jquery.number.min.js"></script>-->
     <script src="script.js"></script>
 </body>
 </html>
+
+
