@@ -46,7 +46,7 @@ nav > ul > li > a {
 }
 
 #search-form {
-    padding: 30px;
+	padding: 30px;
     background-color: #d37121;
     color: #fff;
 }
@@ -56,6 +56,131 @@ nav > ul > li > a {
     color: green;
     font-size: 20px;
 }
+.search-form {
+    width: 100%;
+    background-color: #ce5d12;
+}
+.search-form .btn {
+	display: block;
+	center:
+	    width: 100%;
+    height: 40px;
+    font-size: 16px;
+}
+.search-form h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.search-form form>div {
+    overflow: hidden;
+}
+.search-form .dropdown {
+    background-color: #fff;
+    border-right: 1px solid #e1e1e1;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+}
+.search-form .dropdown::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    background-image: url(data:image/svg+xml;charset=UTF-8,<svg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2011.893%206.503%27><polygon%20fill%3D%27%23666666%27%20points%3D%2711.893%2C0.559%2011.336%2C0%205.947%2C5.39%200.559%2C0%200%2C0.559%205.947%2C6.503%27%2F><%2Fsvg>);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+}
+.search-form form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 0;
+    background: none;
+    width: 100%;
+    display: block;
+    height: 40px;
+}
+.car-item {
+    background-color: #fff;
+    box-shadow: 0 3px 0 rgba(0,0,0,.1);
+    margin-bottom: 30px;
+    transition: .3s;
+}
+.car-item:hover {
+    box-shadow: 0 3px 0 rgb(139, 53, 26);
+}
+.car-item>header>*{
+    padding: 0 15px 1px 15px;
+}
+.car-item figure {
+    position: relative;
+    text-align: center;
+    padding: 0;
+}
+.car-item figure img {
+    width: 80%;
+    height: 40%;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 9;
+    transition: .3s;
+}
+.car-item:hover figure img {
+    transform: scale(1.1)
+}
+.car-item figure::before {
+    content: "";
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(-180deg,rgba(255,254,254,.07),hsla(0,0%,54%,.18) 40%,rgba(0,0,0,.3) 88%);
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 0;
+    padding: 56.25% 0 0;
+    overflow: hidden;
+}
+.car-item h2 {
+    font-size: 24px;
+}
+.car-item .rating i {
+    color: #8b4e15;
+}
+.car-item .price small {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(0,0,0,.5);
+    font-weight: 700;
+}
+.car-item .price p {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.car-item .price .w-tax {
+    color: green;
+}
+
 
 footer {
     background-color: #f0f0f0;
@@ -93,7 +218,7 @@ h1 {
 
 p {
     font-family: verdana;
-    font-size: 10px;
+    font-size: 12px;
     text-align: left;
 }
 
@@ -108,148 +233,3 @@ a {
 }
 
   
-/* Basic reset */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	
-	/* Better text styling */
-	font: bold 14px Arial, sans-serif;
-}
-
-/* Finally adding some IE9 fallbacks for gradients to finish things up */
-
-/* A nice BG gradient */
-html {
-	height: 100%;
-	background: white;
-	background: radial-gradient(circle, #fff 20%, #ccc);
-	background-size: cover;
-}
-
-/* Using box shadows to create 3D effects */
-#calculator {
-	width: 325px;
-	height: auto;
-	
-	margin: 100px auto;
-	padding: 20px 20px 9px;
-	
-	background: #665020;
-	background: linear-gradient(#7a651f, #7e6f1c);
-	border-radius: 3px;
-	box-shadow: 0px 4px #745e18, 0px 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Top portion */
-.top span.clear {
-	float: left;
-}
-
-/* Inset shadow on the screen to create indent */
-.top .screen {
-	height: 40px;
-	width: 212px;
-	
-	float: right;
-	
-	padding: 0 10px;
-	
-	background: rgba(0, 0, 0, 0.2);
-	border-radius: 3px;
-	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
-	
-	/* Typography */
-	font-size: 17px;
-	line-height: 40px;
-	color: white;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-	text-align: right;
-	letter-spacing: 1px;
-}
-
-/* Clear floats */
-.keys, .top {overflow: hidden;}
-
-/* Applying same to the keys */
-.keys span, .top span.clear {
-	float: left;
-	position: relative;
-	top: 0;
-	
-	cursor: pointer;
-	
-	width: 66px;
-	height: 36px;
-	
-	background: white;
-	border-radius: 3px;
-	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
-	
-	margin: 0 7px 11px 0;
-	
-	color: #888;
-	line-height: 36px;
-	text-align: center;
-	
-	/* prevent selection of text inside keys */
-	user-select: none;
-	
-	/* Smoothing out hover and active states using css3 transitions */
-	transition: all 0.2s ease;
-}
-
-/* Remove right margins from operator keys */
-/* style different type of keys (operators/evaluate/clear) differently */
-.keys span.operator {
-	background: #FFF0F5;
-	margin-right: 0;
-}
-
-.keys span.eval {
-	background: #f1ff92;
-	box-shadow: 0px 4px #9da853;
-	color: #888e5f;
-}
-
-.top span.clear {
-	background: #ff9fa8;
-	box-shadow: 0px 4px #ff7c87;
-	color: white;
-}
-
-/* Some hover effects */
-.keys span:hover {
-	background: #9c89f6;
-	box-shadow: 0px 4px #6b54d3;
-	color: white;
-}
-
-.keys span.eval:hover {
-	background: #abb850;
-	box-shadow: 0px 4px #717a33;
-	color: #ffffff;
-}
-
-.top span.clear:hover {
-	background: #f68991;
-	box-shadow: 0px 4px #d3545d;
-	color: white;
-}
-
-/* Simulating "pressed" effect on active state of the keys by removing the box-shadow and moving the keys down a bit */
-.keys span:active {
-	box-shadow: 0px 0px #6b54d3;
-	top: 4px;
-}
-
-.keys span.eval:active {
-	box-shadow: 0px 0px #717a33;
-	top: 4px;
-}
-
-.top span.clear:active {
-	top: 4px;
-	box-shadow: 0px 0px #d3545d;
-}

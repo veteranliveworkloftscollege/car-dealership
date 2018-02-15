@@ -1,0 +1,52 @@
+[
+    {
+            "make":"Lamborgini",
+            "model": "Aventador",
+            "year": 2018,
+            "price": "199,999",
+            "image": "images/inventory-1.jpg"
+        },
+        {
+            "make":"Lamborgini",
+            "model": "Centenario",
+            "year": 2017,
+            "price": "198,999",
+            "image": "images/inventory-2.jpg"
+        },
+        {
+            "make":"Lamborgini",
+            "model": "Asterion",
+            "year": 2016,
+            "price": "196,999",
+            "image": "images/inventory-3.jpg"
+        },
+        {
+            "make":"Lamborgini",
+            "model": "Gallardo",
+            "year": 2012,
+            "price": "146,991",
+            "image": "images/inventory-4.jpg"
+        },
+        {
+            "make":"Lamborgini",
+            "model": "Huracan",
+            "year": 2015,
+            "price": "193,996",
+            "image": "images/inventory-5.jpg"
+        },
+        {
+            "make":"Lamborgini",
+            "model": "Huracan",
+            "year": 2016,
+            "price": "198,996",
+            "image": "images/inventory-6.jpg"
+ 
+     
+        }
+
+
+
+
+]
+
+    
