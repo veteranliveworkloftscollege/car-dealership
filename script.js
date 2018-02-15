@@ -92,6 +92,10 @@ $(function() {
 
     $('#search-form').on('submit', function(e)  {
         e.preventDefault();
+
+        $('.ajax-inventory').html(`<div class="col-md-12">
+            <h2 class="text-center">Searching for cars...</h2>
+        </div>`);
         const formData = $(this).serializeArray();
 
             let output2 = [];
@@ -111,13 +115,15 @@ $(function() {
                     output2.push(carTemplate(car));
                 }
 
-                if( count > 0 ) {
-                    $('.ajax-inventory').html(output2);
-                }else {
-                    $('.ajax-inventory').html(`<div class="col-md-12">
-                        <h2 class="text-center">Nothing found...</h2>
-                    </div>`);
-                }
+                setTimeout( function() {
+                    if( count > 0 ) {
+                        $('.ajax-inventory').html(output2);
+                    }else {
+                        $('.ajax-inventory').html(`<div class="col-md-12">
+                            <h2 class="text-center">Nothing found...</h2>
+                        </div>`);
+                    }
+                }, 1000)
                 
 
             });
